@@ -7,7 +7,8 @@ OBJS = glob.o
 PREFIX ?= /usr/local
 LIBDIR = $(PREFIX)/lib
 INCDIR = $(PREFIX)/include/libglob
-
+LDFLAGS ?=
+CFLAGS ?=
 
 .PHONY: all install uninstall clean
 all: libglob.so libglob.a
